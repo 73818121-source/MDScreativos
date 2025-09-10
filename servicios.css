@@ -1,0 +1,340 @@
+/* --- Sección de Planes de Precios --- */
+.pricing-section {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    text-align: left;
+    position: relative;
+    padding: 30px;
+}
+
+.pricing-card.popular {
+    transform: translateY(-20px);
+    border: 2px solid #d11e38;
+}
+
+.most-popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d11e38;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-header h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 0;
+}
+
+.price {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #d11e38;
+    margin-top: 10px;
+}
+
+.price .period {
+    font-size: 0.5em;
+    font-weight: 400;
+    color: #666;
+}
+
+.card-body h4 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.card-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.card-body ul li i {
+    color: #d11e38;
+    margin-right: 10px;
+}
+
+.btn-primary-card {
+    background-color: #d11e38;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary-card:hover {
+    background-color: #a8182f;
+}
+
+/* --- Sección de Contacto con Formulario --- */
+.contact-section {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.contact-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.contact-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-text p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.plan-options {
+    margin-bottom: 20px;
+}
+
+.plan-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.privacy-policy {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.privacy-policy input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.btn-submit {
+    background-color: #d11e38;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #a8182f;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-info-card img {
+    max-width: 1200px;
+    margin-bottom: 120px;
+}
+
+.contact-info-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-info-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #d11e38;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #a8182f;
+}
+
+/* --- Sección de "Por qué elegirnos" --- */
+.reason-section {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.reason-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.reason-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reason-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+}
+
+.reason-icon {
+    font-size: 2.5em;
+    color: #d11e38;
+    margin-bottom: 15px;
+}
+
+.reason-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.reason-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.reason-buttons {
+    margin-top: 50px;
+}
+
+.btn-secondary-cta,
+.btn-primary-cta {
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-cta {
+    border: 2px solid #d11e38;
+    color: #d11e38;
+}
+
+.btn-secondary-cta:hover {
+    background-color: #d11e38;
+    color: #fff;
+}
+
+.btn-primary-cta {
+    background-color: #d11e38;
+    color: #fff;
+    border: 2px solid #d11e38;
+}
+
+.btn-primary-cta:hover {
+    background-color: #a8182f;
+    border-color: #a8182f;
+}
+
+/* --- Diseño Adaptable para la página de Servicios --- */
+@media (max-width: 768px) {
+    .pricing-card, .contact-content, .reason-grid, .reason-buttons {
+        flex-direction: column;
+    }
+
+    .pricing-card, .contact-text, .contact-info, .reason-item {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+
+    .reason-buttons a {
+        display: block;
+        margin: 10px 0;
+    }
+}

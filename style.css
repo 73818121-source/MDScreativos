@@ -1,0 +1,572 @@
+/* --- Estilos Generales y Tipografía --- */
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+.section-description {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1em;
+    color: #666;
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #d11e38;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-secondary-inverted {
+    background-color: transparent;
+    color: #d11e38;
+    border: 1px solid #d11e38;
+}
+
+.btn-contact {
+    background-color: #fff;
+    color: #d11e38;
+}
+
+.btn-clients {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-cta-light {
+    background-color: #fff;
+    color: #d11e38;
+}
+
+.btn-cta-dark {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* --- Sección del Encabezado --- */
+.main-header {
+    background-color: #d11e38;
+    color: #fff;
+    padding: 10px 0; /* Reducimos el padding vertical para dar más espacio al logo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px; /* Aumentamos la altura del logo. Ajusta este valor si es necesario */
+    /* Puedes probar con 50px, 60px, 70px hasta que te guste el tamaño */
+}
+
+.main-nav {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-nav ul li {
+    margin-right: 25px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* --- Sección Hero --- */
+.hero-section {
+    background: linear-gradient(to right, #d11e38, #ff6b6b);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding-left: calc((100vw - 1200px) / 2 + 20px);
+    z-index: 2; /* Asegura que el contenido esté por encima de la imagen */
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+    margin-right: 15px;
+}
+
+.hero-image {
+    position: absolute;
+    right: calc((100vw - 1200px) / 2);
+    max-width: 800px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    /* Añadimos bordes redondeados aquí */
+    border-radius: 60px; /* Puedes ajustar el valor (ej. 10px, 20px) según lo que prefieras */
+}
+
+/* --- Sección de Soluciones --- */
+.solutions-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.solutions-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.solutions-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solution-item {
+    background-color: #f5f5f5cf;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    flex: 1; 
+    min-width: 300px;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.solution-item:hover {
+    transform: translateY(-10px);
+}
+
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background-color: #d11e38;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.solution-item h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.solution-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* --- Sección del Cartel Publicitario --- */
+.billboard-section {
+    background-color: #f5f5f5cf; /* Este es un gris muy claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.billboard-image-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.billboard-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.billboard-content {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 0;
+}
+
+.billboard-content h2 {
+    font-size: 2.2em;
+    color: #d11e38;
+}
+
+.billboard-content p {
+    line-height: 1.6;
+}
+
+.billboard-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.billboard-content ul li {
+    margin-bottom: 10px;
+}
+
+.billboard-content ul li i {
+    color: #d11e38;
+    margin-right: 10px;
+}
+
+/* --- Sección de Inversión en Contenido --- */
+.content-investment-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap-reverse;
+}
+
+.investment-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.investment-content h2 {
+    font-size: 2.2em;
+    color: #d11e38;
+}
+
+.investment-content p {
+    line-height: 1.6;
+}
+
+.investment-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.investment-content ul li {
+    margin-bottom: 10px;
+}
+
+.investment-content ul li i {
+    color: #d11e38;
+    margin-right: 10px;
+}
+
+.investment-image-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.investment-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Sección de Llamada a la Acción Principal (CTA) --- */
+.main-cta-section {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.main-cta-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-cta-section p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+    margin: 0 10px;
+}
+
+/* --- Sección de Blog/Recursos --- */
+.resources-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.resources-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.resources-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.resource-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 350px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+}
+
+.resource-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.2em;
+    color: #d11e38;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card-content a {
+    color: #d11e38;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* --- Sección del Pie de Página (Footer) --- */
+.main-footer {
+    background-color: #212121;
+    color: #f0f0f0;
+    padding: 60px 20px 20px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-col h3 {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col p, .footer-col ul {
+    font-size: 0.9em;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+.footer-logo img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #d11e38;
+}
+
+.footer-col p i {
+    margin-right: 10px;
+    color: #d11e38;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+/* --- Diseño Adaptable (Responsive) --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-nav {
+        margin: 15px 0;
+    }
+    .main-nav ul {
+        justify-content: center;
+    }
+    .main-nav ul li {
+        margin: 0 10px;
+    }
+    .header-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+    .hero-content {
+        padding-left: 0;
+    }
+    .hero-image {
+        position: static;
+        transform: none;
+        margin-top: 30px;
+        max-width: 80%;
+    }
+    .solution-item {
+        width: 100%;
+        max-width: 350px;
+    }
+    .billboard-section, .content-investment-section {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .billboard-image-container, .investment-image-container {
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .billboard-content, .investment-content {
+        text-align: center;
+    }
+    .billboard-content ul, .investment-content ul {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 300px;
+        padding-left: 0;
+    }
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-col h3 {
+        margin-top: 20px;
+    }
+    .social-icons {
+        justify-content: center;
+        display: flex;
+    }
+}

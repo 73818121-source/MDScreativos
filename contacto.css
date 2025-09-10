@@ -1,0 +1,156 @@
+
+
+/* Estilos para la sección de registro y crecimiento */
+.registro-section {
+  
+    padding: 80px !important;
+    
+    
+    background-color: #f0f2f5;
+}
+
+.registro-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.registro-form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    max-width: 700px;
+}
+
+.registro-form-container h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.registro-form-container p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.form-group.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.btn-registro {
+    width: 100%;
+    padding: 15px;
+    background-color: #d11e38;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-registro:hover {
+    background-color: #a9172c;
+}
+
+/* Estilos de la tarjeta lateral */
+.crece-negocio-card {
+    background-color: #d11e38;
+    color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    flex: 1;
+    max-width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.crece-negocio-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.crece-negocio-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.crece-negocio-card ul li {
+    margin-bottom: 15px;
+}
+
+.crece-negocio-card ul li i {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: #d11e38;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-light-cta {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-light-cta:hover {
+    background-color: #357bd9;
+}
